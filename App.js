@@ -1,21 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from 'react-native';
+
+import Home from './src/screens/containers/home';
+import Header from './src/sections/components/header';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <Home>
+        <Header/>
+        <Text>BUSCADOR</Text>
+        <Text>CATEGORIAS</Text>
+        <Text>SUGERENCIAS</Text>
+      </Home>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
