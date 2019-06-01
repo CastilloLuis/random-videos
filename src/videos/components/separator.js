@@ -5,13 +5,16 @@ import {
 } from 'react-native';
 
 const Separator = (props) => (
-    <View style={styles.separator} />
+    <View 
+        style={separatorStyles(props)} 
+    />
 );
 
-const styles = {
-    separator: {
-        borderTopWidth:  1,
-        borderTopColor: '#eaeaea'
+const separatorStyles = ({ horizontal }) => {
+    return {
+        borderTopWidth: 1,
+        borderTopColor: '#eaeaea', 
+        marginLeft: horizontal ? 10 : 0
     }
 }
 
