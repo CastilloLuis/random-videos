@@ -3,7 +3,8 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://66-3x6.anonymous.videoapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.66-3x6.anonymous.videoapp.exp.direct",
+  "ngrokPid": 28981,
+  "webpackServerPort": null
 }

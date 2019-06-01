@@ -7,8 +7,14 @@ import Empty from '../components/empty';
 import Separator from '../components/separator';
 import Category from '../components/category';
 import CategoryListLayout from '../components/category-list-layout.js'
+import { connect } from 'react-redux';
 
-export default class CategoriesList extends Component {
+function mapStateToProps(state) {
+    console.log(state)
+    return {}
+}
+
+class CategoriesList extends Component {
 
     renderEmpty = () => <Empty text="No hay sugerencias" />;
 
@@ -35,4 +41,6 @@ export default class CategoriesList extends Component {
 
     }
 };
+
+export default connect(mapStateToProps)(CategoriesList);
 

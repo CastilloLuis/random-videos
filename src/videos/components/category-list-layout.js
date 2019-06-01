@@ -17,7 +17,7 @@ const CategoryListLayout = (props) => (
 
 const styles = {
     container: {
-        paddingVertical: 0,
+        paddingVertical: 10,
         paddingHorizontal: 10,
     },
     title: {
