@@ -2,23 +2,26 @@ import React from 'react';
 import {
     View, 
     Image,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
 
 const Suggestion = (props) => (
-    <View style={styles.container}>
-        <View style={styles.left}>
-            <Image style={styles.cover} source={{uri: props.medium_cover_image}} />
-            <View style={styles.category}>
-                <Text style={styles.categoryText}>{props.genres[0]}</Text>
+    <TouchableOpacity onPress={props.onPress}>
+        <View style={styles.container}>
+            <View style={styles.left}>
+                <Image style={styles.cover} source={{uri: props.medium_cover_image}} />
+                <View style={styles.category}>
+                    <Text style={styles.categoryText}>{props.genres[0]}</Text>
+                </View>
+            </View>
+            <View style={styles.right}>
+                <Text style={styles.title}>{props.title}</Text>
+                <Text style={styles.year}>{props.year}</Text>
+                <Text style={styles.rating}>{props.rating}</Text>
             </View>
         </View>
-        <View style={styles.right}>
-            <Text style={styles.title}>{props.title}</Text>
-            <Text style={styles.year}>{props.year}</Text>
-            <Text style={styles.rating}>{props.rating}</Text>
-        </View>
-    </View>
+    </TouchableOpacity>
 );
 
 const styles = {

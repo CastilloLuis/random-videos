@@ -9,9 +9,10 @@ import Category from '../components/category';
 import CategoryListLayout from '../components/category-list-layout.js'
 import { connect } from 'react-redux';
 
-function mapStateToProps(state) {
-    console.log(state)
-    return {}
+const mapStateToProps = ({ categoriesList }) => {
+    return {
+        list: categoriesList
+    }
 }
 
 class CategoriesList extends Component {
