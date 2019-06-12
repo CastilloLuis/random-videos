@@ -12,7 +12,7 @@ npm install && expo start
 ## Built With
 
 * [JavaScript]() - FrontEnd Programming Language
-* [Rract Native]() - JavaScript library for builiding native mobile UI.
+* [React Native]() - JavaScript library for builiding native mobile UI.
 * [Redux]() - State Manager.
 * [Redux-persist]() - Library to persist Redux Store.
 
